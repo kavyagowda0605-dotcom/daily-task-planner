@@ -1,0 +1,139 @@
+/* ==========================================
+   1. General Setup & Variables
+   ========================================== */
+:root {
+  --primary-color: #0d6efd;
+  --dark-bg: #1a1e21;
+  --light-bg: #f8f9fa;
+  --text-color: #212529;
+  --text-muted: #6c757d;
+  --card-border: #e9ecef;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-color);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+/* Padding to prevent fixed navbar overlapping sections */
+section {
+  padding: 60px 0;
+}
+
+/* ==========================================
+   2. Typography & Custom Styling
+   ========================================== */
+h1, h2, h3 {
+  font-weight: 700;
+  color: #111;
+}
+
+h2 {
+  position: relative;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+}
+
+/*h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--primary-color);
+  border-radius: 2px;
+}*/
+
+/* ==========================================
+   3. Hero & Profile Section
+   ========================================== */
+.hero-section {
+  background-color: var(--light-bg);
+  padding: 80px 0;
+}
+
+.hero-section img {
+  border-radius: 50%;
+  max-width: 250px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border: 4px solid #fff;
+}
+
+/* ==========================================
+   4. Career Interests & Lists
+   ========================================== */
+.career-interests ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.career-interests li {
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.career-interests i {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+/* ==========================================
+   5. Tables (Education Section)
+   ========================================== */
+.table {
+  vertical-align: middle;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.table thead {
+  background-color: var(--primary-color);
+  color: #ffffff;
+}
+
+/* ==========================================
+   6. Projects Cards
+   ========================================== */
+.project-card {
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: #fff;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================================
+   7. Contact Section & Footer
+   ========================================== */
+.contact-item {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--light-bg);
+  border-radius: 8px;
+}
+
+.contact-item i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: var(--dark-bg);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
+}
